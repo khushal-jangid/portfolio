@@ -20,10 +20,12 @@ export function OffcanvasBody() {
       animate='enter'
       exit='exit'
     >
-      <OffcanvasBackdrop />
+      <div className='hidden md:block'>
+        <OffcanvasBackdrop />
+      </div>
 
-      <div className='absolute right-0 top-0 h-screen bg-foreground text-background'>
-        <div className='flex h-full flex-col justify-between p-24'>
+      <div className='absolute right-0 top-0 h-screen w-full md:w-[600px] bg-foreground text-background shadow-2xl overflow-y-auto'>
+        <div className='flex h-full min-h-screen flex-col justify-between p-8 pt-24 md:p-24'>
           <OffcanvasLinks />
           <OffcanvasFooter />
         </div>
