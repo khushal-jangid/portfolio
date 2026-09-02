@@ -4,9 +4,11 @@ import { forwardRef } from 'react';
 
 import { motion } from 'framer-motion';
 
-import { CursorShape } from './index.styled';
+import { Center } from '@/components';
 
-const MotionComponent = motion(CursorShape);
+import { CursorCircle } from './index.styled';
+
+const MotionComponent = motion(CursorCircle);
 
 export const ThumbnailCursorCircle = forwardRef(
   /**
@@ -17,7 +19,7 @@ export const ThumbnailCursorCircle = forwardRef(
     return (
       <MotionComponent
         ref={ref}
-        className='bg-primary'
+        className='pointer-events-none fixed left-1/2 top-1/2 hidden md:flex items-center justify-center rounded-full bg-primary text-primary-foreground'
         variants={variants}
         initial='initial'
         animate={active ? 'enter' : 'closed'}
@@ -27,20 +29,4 @@ export const ThumbnailCursorCircle = forwardRef(
   },
 );
 
-export const ThumbnailCursorLabel = forwardRef(
-  /**
-   * @param {import('react').HTMLAttributes<HTMLElement> & { variants: import('framer-motion').Variants; active: boolean;}} props
-   * @param {import('react').ForwardedRef<HTMLElement>} ref
-   */
-  function ThumbnailCursorLabel({ variants, active, ...props }, ref) {
-    return (
-      <MotionComponent
-        ref={ref}
-        variants={variants}
-        initial='initial'
-        animate={active ? 'enter' : 'closed'}
-        {...props}
-      />
-    );
-  },
-);
+ThumbnailCursorCircle.displayName = 'ThumbnailCursorCircle';
