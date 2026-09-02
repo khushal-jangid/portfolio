@@ -1,6 +1,6 @@
 # 🚀 Khushal Jangid Portfolio
 
-> **High-Performance Portfolio & Interactive Digital Experience** inspired by Dennis Snellenberg's award-winning design, crafted with **Next.js 14**, **Tailwind CSS**, **Framer Motion**, **GSAP**, and **Lenis Smooth Scroll**.
+> **High-Performance Portfolio & Interactive Digital Experience** crafted with **Next.js 14**, **Tailwind CSS**, **Framer Motion**, **GSAP**, and **Lenis Smooth Scroll**.
 
 ![Portfolio Header](/public/khushal_portrait.jpg)
 
