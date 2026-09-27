@@ -71,12 +71,4 @@ export const thumbnailOptions = [
     gradient: 'linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%)',
     tag: '🎨 Creative Web Studio',
   },
-  {
-    href: 'https://khushal-jangid.github.io/khushal-webpage/filmhub/',
-    title: 'FilmHub',
-    service: '93 Verified Movie, OTT & Anime Platforms',
-    color: '#dc2626',
-    gradient: 'linear-gradient(135deg, #dc2626 0%, #f97316 100%)',
-    tag: '🎬 Streaming Directory',
-  },
 ];
