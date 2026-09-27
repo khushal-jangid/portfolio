@@ -56,11 +56,5 @@ export const projectOptions = {
       gradient: 'linear-gradient(135deg, #e52d27 0%, #b31217 100%)',
       tech: 'Electron • Custom UI',
     },
-    {
-      title: 'FilmHub',
-      tag: 'Streaming Directory',
-      gradient: 'linear-gradient(135deg, #dc2626 0%, #f97316 100%)',
-      tech: '93 Platforms • Responsive UI',
-    },
   ],
 };
